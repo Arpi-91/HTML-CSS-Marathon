@@ -1,0 +1,406 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lobster Two', cursive;
+}
+
+h1 {
+
+    font-size: 60px;
+    letter-spacing: 4px;
+}
+
+a {
+    color: #b7a347;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+p{
+    margin-top: 5px;
+}
+
+span{
+    color: red;
+    cursor: pointer;
+}
+.login_Page_Form {
+    width: 500px;
+    margin: 40px auto;
+
+}
+
+form{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0 20px 0 rgb(252, 64, 64) inset;
+    border-radius: 20px;
+
+}
+
+input {
+    outline: none;
+    padding: 10px 40px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 10px;
+
+}
+
+button {
+    margin: 10px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(254, 254, 254);
+    background-color: #59B747;
+    transition: .3s;
+}
+
+button:hover {
+    color: #59B747;
+    background-color: white;
+    box-shadow: 0px 0 10px 0 #59B747 inset;
+}
+
+label{
+    margin-left: 10px;
+}
+.container {
+    max-width: 1300px;
+    height: 100vh;
+    margin: 0 auto;
+    background-image: url(/image/a.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.avatar {
+    border-radius: 15%;
+    width: 280px;
+    height: 280px;
+    box-shadow: 0px 5px 30px 0 rgb(238, 146, 146);
+}
+
+.img_container {
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.login_container {
+    width: 56%;
+    text-align: center;
+}
+
+.mail_field {
+    background-image: url(/image/icons8-mail-24.png);
+    background-position: 5px;
+    background-repeat: no-repeat;
+}
+
+.password_field {
+    background-image: url(/image/icons8-password-24.png);
+    background-position: 5px;
+    background-repeat: no-repeat;
+}
+
+
+/* registretion page styles */
+
+
+
+.section{
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    margin:  auto;
+    padding: 10px;
+}
+.section h1{
+    display: inline-block;
+    margin: 10px 0;
+    letter-spacing: 0;
+    font-size: 40px;
+}
+
+.registration_Page_Form {
+    text-align: start;
+    max-width: 800px;
+    margin: auto;
+}
+
+.registration_Page_Form input{
+    outline: none;
+    padding: 5px 20px;
+    margin: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 5px;
+}
+.name_Sections{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.name_Section{
+    padding: 0 10px;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+.name_Sections :nth-child(3){
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.name_Sections :nth-child(3) input{
+    width: 98%;
+}
+.username_Sections{
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.username_Section{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+.password_Sections{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+.password_Section, .confirm_Section{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+.gender_Section{
+    width: 300px;
+}
+.private_Section{
+    width: 100%;
+}
+.private_Message_Section{
+    display: flex;
+}
+.btn_Section{
+    display: flex;
+    justify-content: space-between;
+}
+.btn_Section :nth-child(1){
+    cursor: pointer;
+    color: white;
+    background-color: rgb(68, 142, 239);
+    transition: .5s;
+}
+.btn_Section :nth-child(1):hover{
+    cursor: pointer;
+    color: rgb(68, 142, 239);
+    background-color: white;
+    box-shadow: 0px 0 10px 0 rgb(68, 142, 239) inset;
+}
+.btn_Section :nth-child(2){
+    padding: 5px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(244, 33, 26);
+    transition: .5s;
+}
+.btn_Section :nth-child(2):hover{
+    cursor: pointer;
+    color: rgb(244, 33, 26);
+    background-color: white;
+    box-shadow: 0px 0 20px 0 rgb(244, 33, 26) inset;
+}
+.btn_Section :nth-child(2) {
+    text-decoration: none;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1024px) {
+    .login_Page_Form {
+        width: 400px;
+    }
+
+    .avatar {
+        width: 220px;
+        height: 220px;
+    }
+    .section{
+        width: 650px;
+    }
+    .registration_Page_Form{
+        width: 600px;
+    }
+    
+}
+
+@media screen and (max-width: 769px) {
+    .container {
+        height: 100%;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .login_container {
+        width: 80%;
+    }
+
+    .login_Page_Form {
+        width: 300px;
+
+    }
+
+    .avatar {
+        width: 180px;
+        height: 180px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .section{
+        width: 420px;
+    }
+    .registration_Page_Form{
+        width: 400px;
+    }
+    .name_Sections{
+        flex-direction: column;
+    }
+    .name_Section{
+        width: 320px;
+    }
+    .name_Section:nth-child(3) input{
+        width: 280px;
+    }
+    .username_Section{
+        width: 100%;
+    }
+    .username_Section input{
+        width: 280px;
+    }
+    .password_Sections{
+        flex-direction: column;
+    }
+    .password_Sections input{
+        width: 280px;
+    }
+    
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .login_Page_Form {
+        width: 300px;
+        margin: 20px auto;
+        text-align: center;
+
+    }
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .login_container {
+        padding: 10px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+    p{
+        font-size: 10px;
+    }
+
+    input {
+        outline: none;
+        padding: 10px 40px;
+        margin: 10px;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        border-radius: 10px;
+    }
+    .section{
+        width: 380px;
+    }
+    .section h1{
+        font-size: 26px;
+    }
+    .registration_Page_Form{
+        width: 360px;
+    }
+    .name_Sections{
+        flex-direction: column;
+    }
+    .name_Section{
+        width: 280px;
+    }
+    .name_Section input{
+        font-size: 12px;
+    }
+    .name_Section:nth-child(3) input{
+        font-size: 12px;
+        width: 240px;
+    }
+    .username_Section input{
+        font-size: 12px;
+        width: 240px;
+    }
+    .password_Sections{
+        flex-direction: column;
+    }
+    .password_Sections input{
+        font-size: 12px;
+        width: 240px;
+    }
+    .private_Message_Section p{
+        font-size: 12px;
+    }
+    .btn_Section button, a{
+        font-size: 12px;
+        padding: 0 10px;
+    }
+}
